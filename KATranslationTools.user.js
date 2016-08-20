@@ -34,22 +34,22 @@
         //In number: Need percentage
         simpleReplaceInTxtbox(/\\*\s*%\s*\$/g, "{\\,}\\%$$");
         //40€ -> 40{\,}€ (simple cases)
-        simpleReplaceInTxtbox(/\$(\d+)€/g, "$$$1{\\,}€");
-        simpleReplaceInTxtbox(/(\d+)€$/g, "$1{\\,}€$$");
+        simpleReplaceInTxtbox(/\$(\d+)€/g, "$$$1{\\,}z\u0142");
+        simpleReplaceInTxtbox(/(\d+)€$/g, "$1{\\,}z\u0142$$");
         //x-intercept / y-intercept
         simpleReplaceInTxtbox(/\$x\$-intercept/g, "przcięcie z osią $$X$$");
         simpleReplaceInTxtbox(/\$y\$-intercept/g, "przecięcie z osią $$Y$$");
         //and -> und and other simple phrase replacements
         simpleReplaceInTxtbox(/Both ([A-Z][a-z]+) and ([A-Z][a-z]+)/g, "Zarówno $1 jak i $2");
         simpleReplaceInTxtbox(/Yes, (.*) is correct but (.*) is not(\.?)/g, "Tak, $1 jest prawidłowe, ale $2 nie.");
-        simpleReplaceInTxtbox(/^In conclusion, the equation has one solution:/g, "Podsumowując, równanie ma jedno rozwiązaniee:");
-        simpleReplaceInTxtbox(/Find the complex conjugate (.*) of/g, "Finde die Konjugierte $1 von");
-        simpleReplaceInTxtbox(/Your answer should be a complex number in the form \$a\+bi\$ where \$a\$ and \$b\$ are real numbers./g, "Deine Antwort sollte eine Komplexe Zahl im Format $$a+bi$$ sein, wobei $$a$$ und $$b$$ reelle Zahlen sind.");
-        simpleReplaceInTxtbox(/What are the real and imaginary parts of (\$[a-z]\$) ?\?/g, "Was ist der Real- und Imaginärteil von $1 ?");
-        simpleReplaceInTxtbox(/Are( the)? vectors (\$.+\$) and (\$.+\$) equivalent ?\?/g, "Sind die Vektoren $2 und $3 äquivalent?");
-        simpleReplaceInTxtbox(/Is the matrix (\$[A-Z]\$) invertible\?/g, "Ist die Matrix $1 invertierbar?");
-        simpleReplaceInTxtbox(/The answer is(:?)/g, "Die Antwort ist\1");
-        simpleReplaceInTxtbox(/The answer(:?)/g, "Die Antwort$1");
+        simpleReplaceInTxtbox(/^In conclusion, the equation has one solution:/g, "Podsumowując, równanie ma jedno rozwiązanie:");
+        simpleReplaceInTxtbox(/Find the complex conjugate (.*) of/g, "Znajdź sprzężenie zespolone $1 ");
+        simpleReplaceInTxtbox(/Your answer should be a complex number in the form \$a\+bi\$ where \$a\$ and \$b\$ are real numbers./g, "Twoja odpowiedź powinna mieć postać liczby zespolonej $$a+bi$$, gdzie $$a$$ i $$b$$ to liczby rzeczywiste.");
+        simpleReplaceInTxtbox(/What are the real and imaginary parts of (\$[a-z]\$) ?\?/g, "Jakie są rzeczywiste i urojone części $1 ?");
+        simpleReplaceInTxtbox(/Are( the)? vectors (\$.+\$) and (\$.+\$) equivalent ?\?/g, "Czy wektory $2 i $3 są równoważne?");
+        simpleReplaceInTxtbox(/Is the matrix (\$[A-Z]\$) invertible\?/g, "Czy macierz  $1 jest odwracalna?");
+        simpleReplaceInTxtbox(/The answer is(:?)/g, "Odpowiedź to\1");
+        simpleReplaceInTxtbox(/The answer(:?)/g, "Odpowiedź$1");
         simpleReplaceInTxtbox(/ is not a factor of /g, " nie jest czynnikiem ");
         simpleReplaceInTxtbox(/In conclusion,/g, "Podsumowując:");
         simpleReplaceInTxtbox(/To conclude\s*[:,]?(\s*)/g, "Podsumowując: ");
