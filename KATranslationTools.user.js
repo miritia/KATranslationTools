@@ -91,6 +91,7 @@
         simpleReplaceInTxtbox(/\bpoint\b/g, "punkt");
         simpleReplaceInTxtbox(/\b[Ss]catterplot\b/g, "Wykres punktowy");
         simpleReplaceInTxtbox(/\bFill in the blank\b/g, "Wypełnij puste pola");
+        simpleReplaceInTxtbox(/\bEvaluate the integral\b/g, "Oblicz całkę");
    }
 
    /**
