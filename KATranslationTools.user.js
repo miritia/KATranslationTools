@@ -3,6 +3,7 @@
   // @namespace   kadeutsch.org/kacrowdintools
   // @include     https://crowdin.com/translate/khanacademy/*
   // @include     https://translate.khanacademy.org/translate/*
+  // @include     https://*.khanacademy.org/translations/*
   // @description Various keyboard shortcuts to make KA translation on crowdin a little bit easier
   // @version     0.5.3
   // @grant       none
